@@ -63,6 +63,9 @@ export default function ResourceForm({ resource, record, onSubmit, onCancel, sav
                   type={definition.type === 'number' ? 'number' : definition.type}
                   min={definition.min}
                   step={definition.step}
+                  onClick={definition.type === 'date'
+                    ? (event) => event.currentTarget.showPicker?.()
+                    : undefined}
                 />
               )}
             </div>

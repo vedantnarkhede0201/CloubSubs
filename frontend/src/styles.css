@@ -250,6 +250,8 @@ h1, h2, h3, p { margin-top: 0; }
 .form-field input:focus, .form-field select:focus { border-color: #777; outline: 0; }
 .form-field input:disabled { background: #202020; color: #8b8885; }
 .form-field input::placeholder { color: #767371; }
+input[type="date"] { color-scheme: dark; cursor: pointer; }
+input[type="date"]::-webkit-calendar-picker-indicator { cursor: pointer; filter: brightness(0) invert(1); opacity: .9; }
 .record-form { display: grid; gap: 19px; }
 .form-actions { align-items: center; border-top: 1px solid #30302f; display: flex; gap: 10px; justify-content: flex-end; padding-top: 15px; }
 .current-subscription { background: #171717; border: 1px solid #30302f; border-radius: 5px; display: grid; gap: 6px; padding: 13px; }
